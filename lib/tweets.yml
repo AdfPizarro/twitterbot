@@ -1,0 +1,261 @@
+---
+- !ruby/object:Twitter::Tweet
+  attrs:
+    :created_at: Wed Jul 01 01:14:45 +0000 2020
+    :id: 1278134915788353537
+    :id_str: '1278134915788353537'
+    :text: "@adfpizarro wsup human?"
+    :truncated: false
+    :entities:
+      :hashtags: []
+      :symbols: []
+      :user_mentions:
+      - :screen_name: adfpizarro
+        :name: Adrian
+        :id: 717291622434607104
+        :id_str: '717291622434607104'
+        :indices:
+        - 0
+        - 11
+      :urls: []
+    :source: <a href="http://twitter.com/download/android" rel="nofollow">Twitter
+      for Android</a>
+    :in_reply_to_status_id: 
+    :in_reply_to_status_id_str: 
+    :in_reply_to_user_id: 717291622434607104
+    :in_reply_to_user_id_str: '717291622434607104'
+    :in_reply_to_screen_name: adfpizarro
+    :user:
+      :id: 158738578
+      :id_str: '158738578'
+      :name: Carlos Veiga
+      :screen_name: carlosveig
+      :location: Brazil
+      :description: still sleepy.
+      :url: 
+      :entities:
+        :description:
+          :urls: []
+      :protected: false
+      :followers_count: 109
+      :friends_count: 574
+      :listed_count: 0
+      :created_at: Wed Jun 23 13:29:22 +0000 2010
+      :favourites_count: 2306
+      :utc_offset: 
+      :time_zone: 
+      :geo_enabled: false
+      :verified: false
+      :statuses_count: 461
+      :lang: 
+      :contributors_enabled: false
+      :is_translator: false
+      :is_translation_enabled: false
+      :profile_background_color: '000000'
+      :profile_background_image_url: http://abs.twimg.com/images/themes/theme13/bg.gif
+      :profile_background_image_url_https: https://abs.twimg.com/images/themes/theme13/bg.gif
+      :profile_background_tile: false
+      :profile_image_url: http://pbs.twimg.com/profile_images/1274478998152716288/ooslM-SV_normal.jpg
+      :profile_image_url_https: https://pbs.twimg.com/profile_images/1274478998152716288/ooslM-SV_normal.jpg
+      :profile_banner_url: https://pbs.twimg.com/profile_banners/158738578/1592238474
+      :profile_link_color: 7FDBB6
+      :profile_sidebar_border_color: '000000'
+      :profile_sidebar_fill_color: '000000'
+      :profile_text_color: '000000'
+      :profile_use_background_image: false
+      :has_extended_profile: true
+      :default_profile: false
+      :default_profile_image: false
+      :following: false
+      :follow_request_sent: false
+      :notifications: false
+      :translator_type: none
+    :geo: 
+    :coordinates: 
+    :place: 
+    :contributors: 
+    :is_quote_status: false
+    :retweet_count: 0
+    :favorite_count: 0
+    :favorited: false
+    :retweeted: false
+    :lang: en
+  _memoized_method_cache: !ruby/object:Memoizable::Memory
+    memory: !ruby/object:ThreadSafe::Cache
+      backend:
+        :created_at: 2020-07-01 01:14:45.000000000 Z
+      default_proc: 
+    monitor: !ruby/object:Monitor {}
+- !ruby/object:Twitter::Tweet
+  attrs:
+    :created_at: Tue Jun 30 21:26:30 +0000 2020
+    :id: 1278077477471096833
+    :id_str: '1278077477471096833'
+    :text: "My friend @adfpizarro will release his new project on Twitter. \U0001F609"
+    :truncated: false
+    :entities:
+      :hashtags: []
+      :symbols: []
+      :user_mentions:
+      - :screen_name: adfpizarro
+        :name: Adrian
+        :id: 717291622434607104
+        :id_str: '717291622434607104'
+        :indices:
+        - 10
+        - 21
+      :urls: []
+    :source: <a href="http://twitter.com/download/android" rel="nofollow">Twitter
+      for Android</a>
+    :in_reply_to_status_id: 
+    :in_reply_to_status_id_str: 
+    :in_reply_to_user_id: 
+    :in_reply_to_user_id_str: 
+    :in_reply_to_screen_name: 
+    :user:
+      :id: 1227709156905377792
+      :id_str: '1227709156905377792'
+      :name: MariRoque
+      :screen_name: MariRoq88285995
+      :location: Rio de Janeiro, Brasil
+      :description: Software Developer Newbie⌨
+      :url: 
+      :entities:
+        :description:
+          :urls: []
+      :protected: false
+      :followers_count: 68
+      :friends_count: 39
+      :listed_count: 2
+      :created_at: Wed Feb 12 21:41:03 +0000 2020
+      :favourites_count: 151
+      :utc_offset: 
+      :time_zone: 
+      :geo_enabled: false
+      :verified: false
+      :statuses_count: 33
+      :lang: 
+      :contributors_enabled: false
+      :is_translator: false
+      :is_translation_enabled: false
+      :profile_background_color: F5F8FA
+      :profile_background_image_url: 
+      :profile_background_image_url_https: 
+      :profile_background_tile: false
+      :profile_image_url: http://pbs.twimg.com/profile_images/1275629784521936897/pA5hRrDv_normal.jpg
+      :profile_image_url_https: https://pbs.twimg.com/profile_images/1275629784521936897/pA5hRrDv_normal.jpg
+      :profile_banner_url: https://pbs.twimg.com/profile_banners/1227709156905377792/1587836180
+      :profile_link_color: 1DA1F2
+      :profile_sidebar_border_color: C0DEED
+      :profile_sidebar_fill_color: DDEEF6
+      :profile_text_color: '333333'
+      :profile_use_background_image: true
+      :has_extended_profile: true
+      :default_profile: true
+      :default_profile_image: false
+      :following: true
+      :follow_request_sent: false
+      :notifications: false
+      :translator_type: none
+    :geo: 
+    :coordinates: 
+    :place: 
+    :contributors: 
+    :is_quote_status: false
+    :retweet_count: 0
+    :favorite_count: 1
+    :favorited: false
+    :retweeted: false
+    :lang: en
+  _memoized_method_cache: !ruby/object:Memoizable::Memory
+    memory: !ruby/object:ThreadSafe::Cache
+      backend:
+        :created_at: 2020-06-30 21:26:30.000000000 Z
+      default_proc: 
+    monitor: !ruby/object:Monitor {}
+- !ruby/object:Twitter::Tweet
+  attrs:
+    :created_at: Tue Jun 30 20:56:52 +0000 2020
+    :id: 1278070020157906945
+    :id_str: '1278070020157906945'
+    :text: "@adfpizarro"
+    :truncated: false
+    :entities:
+      :hashtags: []
+      :symbols: []
+      :user_mentions:
+      - :screen_name: adfpizarro
+        :name: Adrian
+        :id: 717291622434607104
+        :id_str: '717291622434607104'
+        :indices:
+        - 0
+        - 11
+      :urls: []
+    :source: <a href="https://mobile.twitter.com" rel="nofollow">Twitter Web App</a>
+    :in_reply_to_status_id: 
+    :in_reply_to_status_id_str: 
+    :in_reply_to_user_id: 717291622434607104
+    :in_reply_to_user_id_str: '717291622434607104'
+    :in_reply_to_screen_name: adfpizarro
+    :user:
+      :id: 114882928
+      :id_str: '114882928'
+      :name: Gerónimo Morisot
+      :screen_name: Rewritablee
+      :location: ''
+      :description: ''
+      :url: 
+      :entities:
+        :description:
+          :urls: []
+      :protected: false
+      :followers_count: 41
+      :friends_count: 59
+      :listed_count: 0
+      :created_at: Tue Feb 16 22:40:47 +0000 2010
+      :favourites_count: 8660
+      :utc_offset: 
+      :time_zone: 
+      :geo_enabled: false
+      :verified: false
+      :statuses_count: 2611
+      :lang: 
+      :contributors_enabled: false
+      :is_translator: false
+      :is_translation_enabled: false
+      :profile_background_color: C0DEED
+      :profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+      :profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+      :profile_background_tile: false
+      :profile_image_url: http://pbs.twimg.com/profile_images/1055104866241179648/-jK2xpzo_normal.jpg
+      :profile_image_url_https: https://pbs.twimg.com/profile_images/1055104866241179648/-jK2xpzo_normal.jpg
+      :profile_banner_url: https://pbs.twimg.com/profile_banners/114882928/1540391839
+      :profile_link_color: 1DA1F2
+      :profile_sidebar_border_color: C0DEED
+      :profile_sidebar_fill_color: DDEEF6
+      :profile_text_color: '333333'
+      :profile_use_background_image: true
+      :has_extended_profile: false
+      :default_profile: true
+      :default_profile_image: false
+      :following: true
+      :follow_request_sent: false
+      :notifications: false
+      :translator_type: none
+    :geo: 
+    :coordinates: 
+    :place: 
+    :contributors: 
+    :is_quote_status: false
+    :retweet_count: 0
+    :favorite_count: 0
+    :favorited: false
+    :retweeted: false
+    :lang: und
+  _memoized_method_cache: !ruby/object:Memoizable::Memory
+    memory: !ruby/object:ThreadSafe::Cache
+      backend:
+        :created_at: 2020-06-30 20:56:52.000000000 Z
+      default_proc: 
+    monitor: !ruby/object:Monitor {}
