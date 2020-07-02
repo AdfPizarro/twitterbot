@@ -38,4 +38,10 @@ class Twitt
 
     @client.update(message, in_reply_to_status_id: id )
   end
+
+  def getTrendings
+    trendings= @client.trends(id=2459115, options = {})
+    trendings.each {|topic| puts topic}
+    File.write('../lib/trendings.yml', YAML.dump(trendings))
+  end
 end
