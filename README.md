@@ -36,7 +36,7 @@
   Now everything is ready, but don't run it yet, check the instructions
 ​
 
-### Instructions
+## Instructions
 
 
   By default the boot will take the trending topic and publish
@@ -52,7 +52,7 @@
   You may also want to edit the predefined tweets in the journal by editing
   the `lib/journal.yml` file
 
-  ![screenshot](./screenshot/ss2.png)
+  ![screenshot](./screenshots/ss2.png)
 
   The boot will check for mentions every minute and auto reply them
   based on the intent of the tweet, this intents can be
@@ -80,7 +80,7 @@
   To run the bot you only need to type in the console
   `ruby main.rb`
 
-  ![screenshot](./screenshot/ss1.png)
+  ![screenshot](./screenshots/ss1.png)
 
 
 ## Commands
