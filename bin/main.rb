@@ -9,9 +9,9 @@ timerCount=0
 
 puts "--------Twitter Bot--------"
 
-
-twitt.getTrendings
-
+puts autopost.getJournalRemain
+puts autopost.postFromJournal
+puts autopost.getJournalRemain
 
 while false
   mentions = twitt.getNewMentions
@@ -26,7 +26,10 @@ while false
     end
   end
 
-  if timerCount 120
+  if timerCount > 120
+    puts "Autopublishing trending topic"
+    puts autopost.postTrendingTopic
+    timerCount=0
   end
 
   sleep 60

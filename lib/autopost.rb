@@ -1,5 +1,6 @@
 require_relative '../lib/twitt.rb'
 require_relative '../lib/tweetIntent.rb'
+require 'yaml'
 
 
 class Autopost
@@ -50,11 +51,24 @@ class Autopost
   end
 
   def postFromJournal
+    messages=YAML.load(File.read("../lib/journal.yml"))
+    message=messages[0]
+    messages.shift
+    File.write('../lib/journal.yml', YAML.dump(messages))
+    @twitt.tweet(message)
+    return message
+  end
 
+  def getJournalRemain
+    messages=YAML.load(File.read("../lib/journal.yml"))
+    return messages.size
   end
 
   def postTrendingTopic
-
+    topic=@twitt.getTrendings
+    message = "Hello world what do you think about #{topic}"
+    @twitt.tweet(message)
+    return message
   end
 
 end

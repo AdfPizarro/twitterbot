@@ -35,13 +35,12 @@ class Twitt
 
   def reply(message, tweet)
     id=tweet::id
-
     @client.update(message, in_reply_to_status_id: id )
   end
 
   def getTrendings
     trendings= @client.trends(id=2459115, options = {})
-    trendings.each {|topic| puts topic}
-    File.write('../lib/trendings.yml', YAML.dump(trendings))
+    trendings.each {|topic| return topic::name}
+    #File.write('../lib/trendings.yml', YAML.dump(trendings))
   end
 end
