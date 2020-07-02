@@ -2,6 +2,7 @@ class TweetIntent
   def initialize
     @greetList=YAML.load(File.read("../lib/greet.yml"))
     @helpList=YAML.load(File.read("../lib/help.yml"))
+    @memeList=YAML.load(File.read("../lib/memes.yml"))
   end
 
   def checkIntent(message)
@@ -10,14 +11,20 @@ class TweetIntent
     end
 
     @greetList.each do |word|
-     if /\b#{word}\b/i.match?(message)
+     if /\b#{word.downcase}\b/i.match?(message.downcase)
        return 'greet'
      end
     end
 
     @helpList.each do |word|
-     if /\b#{word}\b/i.match?(message)
+     if /\b#{word.downcase}\b/i.match?(message.downcase)
        return 'help'
+     end
+    end
+
+    @memeList.each do |word|
+     if /\b#{word.downcase}\b/i.match?(message.downcase)
+       return 'meme'
      end
     end
 

@@ -1,11 +1,9 @@
-require_relative '../lib/twitt.rb'
-require_relative '../lib/tweetIntent.rb'
+require_relative '../lib/autopost.rb'
 
+autopost=Autopost.new
 twitt=Twitt.new
 intent=TweetIntent.new
 
 
 mentions =twitt.getNewMentions
-mentions.each {|mention| puts mention::text}
-
-puts intent.checkIntent("help @adfpizarro")
+mentions.each {|mention| autopost.reply(mention)}

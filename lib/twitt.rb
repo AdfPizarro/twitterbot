@@ -34,6 +34,8 @@ class Twitt
 
 
   def reply(message, tweet)
-    client.update( '@'+mention::user::screen_name+' '+message, in_reply_to_status_id: mention::id )
+    id=tweet::id
+
+    @client.update(message, in_reply_to_status_id: id )
   end
 end
