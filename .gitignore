@@ -1,5 +1,5 @@
 *.gem
-*.env
+.env
 *.rbc
 /.config
 /coverage/

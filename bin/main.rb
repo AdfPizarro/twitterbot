@@ -1,4 +1,6 @@
 require_relative '../lib/autopost.rb'
+require 'dotenv'
+Dotenv.load('../config.env')
 
 autopost = Autopost.new
 twitt = Twitt.new
@@ -22,12 +24,12 @@ loop do
     end
   end
 
-  if journal_count > 240
+  if journal_count > ENV["TRENDING_PUBLISH"].to_i
     puts 'Autopublishing journal tweet'
     puts autopost.postFromJournal
   end
 
-  if trending_count > 120
+  if trending_count > ENV["JOURNAL_PUBLISH"].to_i
     puts 'Autopublishing trending topic'
     puts autopost.postTrendingTopic
     trending_count = 0

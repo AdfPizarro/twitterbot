@@ -24,11 +24,17 @@ class Twitt
   end
 
   def getNewMentions
-    savedMentions=YAML.load(File.read("../lib/tweets.yml"))
-    lastMentionDate=savedMentions[0]::created_at
-    allMentions = @client.mentions_timeline
-    newMentions=allMentions.select { |mention| mention::created_at > lastMentionDate }
-    File.write('../lib/tweets.yml', YAML.dump(allMentions))
+    if File.exists? ("../lib/tweets.yml")
+      savedMentions = YAML.load(File.read("../lib/tweets.yml"))
+      lastMentionDate=savedMentions[0]::created_at
+      allMentions = @client.mentions_timeline
+      newMentions=allMentions.select { |mention| mention::created_at > lastMentionDate }
+      File.write('../lib/tweets.yml', YAML.dump(allMentions))
+    else
+      newMentions=@client.mentions_timeline
+      File.write('../lib/tweets.yml', YAML.dump(newMentions))
+    end
+
     return newMentions
   end
 

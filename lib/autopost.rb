@@ -52,11 +52,15 @@ class Autopost
 
   def postFromJournal
     messages=YAML.load(File.read("../lib/journal.yml"))
-    message=messages[0]
-    messages.shift
-    File.write('../lib/journal.yml', YAML.dump(messages))
-    @twitt.tweet(message)
-    return message
+
+    if messages.size > 0
+      message=messages[0]
+      messages.shift
+      File.write('../lib/journal.yml', YAML.dump(messages))
+      @twitt.tweet(message)
+      return message
+    end
+    return "No tweets in the journal"
   end
 
   def getJournalRemain
