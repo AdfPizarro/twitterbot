@@ -64,6 +64,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  bundler
   rspec
   twitter
   yaml
