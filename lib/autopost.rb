@@ -4,9 +4,10 @@ require 'yaml'
 
 
 class Autopost
-  def initialize
-    @tweetIntent=TweetIntent.new('production')
-    @twitt=Twitt.new("production")
+  def initialize(enviroment)
+    @enviroment=enviroment
+    @tweetIntent=TweetIntent.new(enviroment)
+    @twitt=Twitt.new(enviroment)
   end
 
   def reply(tweet)
@@ -51,12 +52,17 @@ class Autopost
   end
 
   def postFromJournal
-    messages=YAML.load(File.read("../lib/journal.yml"))
+    if @enviroment=="production"
+      path="../lib/journal.yml"
+    else
+      path="./lib/journal.yml"
+    end
 
+    messages=YAML.load(File.read(path))
     if messages.size > 0
       message=messages[0]
       messages.shift
-      File.write('../lib/journal.yml', YAML.dump(messages))
+      File.write(path, YAML.dump(messages))
       @twitt.tweet(message)
       return message
     end
@@ -64,7 +70,13 @@ class Autopost
   end
 
   def getJournalRemain
-    messages=YAML.load(File.read("../lib/journal.yml"))
+    if @enviroment=="production"
+      path="../lib/journal.yml"
+    else
+      path="./lib/journal.yml"
+    end
+
+    messages=YAML.load(File.read(path))
     return messages.size
   end
 

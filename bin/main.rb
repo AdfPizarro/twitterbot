@@ -2,7 +2,7 @@ require_relative '../lib/autopost.rb'
 require 'dotenv'
 Dotenv.load('../config.env')
 
-autopost = Autopost.new
+autopost = Autopost.new('production')
 twitt = Twitt.new("production")
 trending_count = 0
 journal_count = 0

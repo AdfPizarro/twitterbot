@@ -1,6 +1,429 @@
 ---
 - !ruby/object:Twitter::Tweet
   attrs:
+    :created_at: Thu Jul 02 22:16:33 +0000 2020
+    :id: 1278814847359234051
+    :id_str: '1278814847359234051'
+    :text: "@adfpizarro https://t.co/70qaNnrF4v"
+    :truncated: false
+    :entities:
+      :hashtags: []
+      :symbols: []
+      :user_mentions:
+      - :screen_name: adfpizarro
+        :name: Adrian
+        :id: 717291622434607104
+        :id_str: '717291622434607104'
+        :indices:
+        - 0
+        - 11
+      :urls: []
+      :media:
+      - :id: 1278814838328889350
+        :id_str: '1278814838328889350'
+        :indices:
+        - 12
+        - 35
+        :media_url: http://pbs.twimg.com/tweet_video_thumb/Eb9DUewXkAYymyi.jpg
+        :media_url_https: https://pbs.twimg.com/tweet_video_thumb/Eb9DUewXkAYymyi.jpg
+        :url: https://t.co/70qaNnrF4v
+        :display_url: pic.twitter.com/70qaNnrF4v
+        :expanded_url: https://twitter.com/MariRoq88285995/status/1278814847359234051/photo/1
+        :type: photo
+        :sizes:
+          :large:
+            :w: 200
+            :h: 114
+            :resize: fit
+          :thumb:
+            :w: 114
+            :h: 114
+            :resize: crop
+          :small:
+            :w: 200
+            :h: 114
+            :resize: fit
+          :medium:
+            :w: 200
+            :h: 114
+            :resize: fit
+    :extended_entities:
+      :media:
+      - :id: 1278814838328889350
+        :id_str: '1278814838328889350'
+        :indices:
+        - 12
+        - 35
+        :media_url: http://pbs.twimg.com/tweet_video_thumb/Eb9DUewXkAYymyi.jpg
+        :media_url_https: https://pbs.twimg.com/tweet_video_thumb/Eb9DUewXkAYymyi.jpg
+        :url: https://t.co/70qaNnrF4v
+        :display_url: pic.twitter.com/70qaNnrF4v
+        :expanded_url: https://twitter.com/MariRoq88285995/status/1278814847359234051/photo/1
+        :type: animated_gif
+        :sizes:
+          :large:
+            :w: 200
+            :h: 114
+            :resize: fit
+          :thumb:
+            :w: 114
+            :h: 114
+            :resize: crop
+          :small:
+            :w: 200
+            :h: 114
+            :resize: fit
+          :medium:
+            :w: 200
+            :h: 114
+            :resize: fit
+        :video_info:
+          :aspect_ratio:
+          - 100
+          - 57
+          :variants:
+          - :bitrate: 0
+            :content_type: video/mp4
+            :url: https://video.twimg.com/tweet_video/Eb9DUewXkAYymyi.mp4
+    :source: <a href="http://twitter.com/download/android" rel="nofollow">Twitter
+      for Android</a>
+    :in_reply_to_status_id: 1278812123477544960
+    :in_reply_to_status_id_str: '1278812123477544960'
+    :in_reply_to_user_id: 717291622434607104
+    :in_reply_to_user_id_str: '717291622434607104'
+    :in_reply_to_screen_name: adfpizarro
+    :user:
+      :id: 1227709156905377792
+      :id_str: '1227709156905377792'
+      :name: MariRoque
+      :screen_name: MariRoq88285995
+      :location: Rio de Janeiro, Brasil
+      :description: Software Developer Newbie⌨
+      :url: 
+      :entities:
+        :description:
+          :urls: []
+      :protected: false
+      :followers_count: 67
+      :friends_count: 39
+      :listed_count: 2
+      :created_at: Wed Feb 12 21:41:03 +0000 2020
+      :favourites_count: 152
+      :utc_offset: 
+      :time_zone: 
+      :geo_enabled: false
+      :verified: false
+      :statuses_count: 37
+      :lang: 
+      :contributors_enabled: false
+      :is_translator: false
+      :is_translation_enabled: false
+      :profile_background_color: F5F8FA
+      :profile_background_image_url: 
+      :profile_background_image_url_https: 
+      :profile_background_tile: false
+      :profile_image_url: http://pbs.twimg.com/profile_images/1275629784521936897/pA5hRrDv_normal.jpg
+      :profile_image_url_https: https://pbs.twimg.com/profile_images/1275629784521936897/pA5hRrDv_normal.jpg
+      :profile_banner_url: https://pbs.twimg.com/profile_banners/1227709156905377792/1587836180
+      :profile_link_color: 1DA1F2
+      :profile_sidebar_border_color: C0DEED
+      :profile_sidebar_fill_color: DDEEF6
+      :profile_text_color: '333333'
+      :profile_use_background_image: true
+      :has_extended_profile: true
+      :default_profile: true
+      :default_profile_image: false
+      :following: true
+      :follow_request_sent: false
+      :notifications: false
+      :translator_type: none
+    :geo: 
+    :coordinates: 
+    :place: 
+    :contributors: 
+    :is_quote_status: false
+    :retweet_count: 0
+    :favorite_count: 0
+    :favorited: false
+    :retweeted: false
+    :possibly_sensitive: false
+    :lang: und
+  _memoized_method_cache: !ruby/object:Memoizable::Memory
+    memory: !ruby/object:ThreadSafe::Cache
+      backend:
+        :created_at: 2020-07-02 22:16:33.000000000 Z
+      default_proc: 
+    monitor: !ruby/object:Monitor {}
+- !ruby/object:Twitter::Tweet
+  attrs:
+    :created_at: Thu Jul 02 22:14:26 +0000 2020
+    :id: 1278814313600385024
+    :id_str: '1278814313600385024'
+    :text: "@adfpizarro Yes I am, thank you @adfpizarro ."
+    :truncated: false
+    :entities:
+      :hashtags: []
+      :symbols: []
+      :user_mentions:
+      - :screen_name: adfpizarro
+        :name: Adrian
+        :id: 717291622434607104
+        :id_str: '717291622434607104'
+        :indices:
+        - 0
+        - 11
+      - :screen_name: adfpizarro
+        :name: Adrian
+        :id: 717291622434607104
+        :id_str: '717291622434607104'
+        :indices:
+        - 32
+        - 43
+      :urls: []
+    :source: <a href="http://twitter.com/download/android" rel="nofollow">Twitter
+      for Android</a>
+    :in_reply_to_status_id: 1278812128649138176
+    :in_reply_to_status_id_str: '1278812128649138176'
+    :in_reply_to_user_id: 717291622434607104
+    :in_reply_to_user_id_str: '717291622434607104'
+    :in_reply_to_screen_name: adfpizarro
+    :user:
+      :id: 1227709156905377792
+      :id_str: '1227709156905377792'
+      :name: MariRoque
+      :screen_name: MariRoq88285995
+      :location: Rio de Janeiro, Brasil
+      :description: Software Developer Newbie⌨
+      :url: 
+      :entities:
+        :description:
+          :urls: []
+      :protected: false
+      :followers_count: 67
+      :friends_count: 39
+      :listed_count: 2
+      :created_at: Wed Feb 12 21:41:03 +0000 2020
+      :favourites_count: 152
+      :utc_offset: 
+      :time_zone: 
+      :geo_enabled: false
+      :verified: false
+      :statuses_count: 37
+      :lang: 
+      :contributors_enabled: false
+      :is_translator: false
+      :is_translation_enabled: false
+      :profile_background_color: F5F8FA
+      :profile_background_image_url: 
+      :profile_background_image_url_https: 
+      :profile_background_tile: false
+      :profile_image_url: http://pbs.twimg.com/profile_images/1275629784521936897/pA5hRrDv_normal.jpg
+      :profile_image_url_https: https://pbs.twimg.com/profile_images/1275629784521936897/pA5hRrDv_normal.jpg
+      :profile_banner_url: https://pbs.twimg.com/profile_banners/1227709156905377792/1587836180
+      :profile_link_color: 1DA1F2
+      :profile_sidebar_border_color: C0DEED
+      :profile_sidebar_fill_color: DDEEF6
+      :profile_text_color: '333333'
+      :profile_use_background_image: true
+      :has_extended_profile: true
+      :default_profile: true
+      :default_profile_image: false
+      :following: true
+      :follow_request_sent: false
+      :notifications: false
+      :translator_type: none
+    :geo: 
+    :coordinates: 
+    :place: 
+    :contributors: 
+    :is_quote_status: false
+    :retweet_count: 0
+    :favorite_count: 0
+    :favorited: false
+    :retweeted: false
+    :lang: en
+  _memoized_method_cache: !ruby/object:Memoizable::Memory
+    memory: !ruby/object:ThreadSafe::Cache
+      backend:
+        :created_at: 2020-07-02 22:14:26.000000000 Z
+      default_proc: 
+    monitor: !ruby/object:Monitor {}
+- !ruby/object:Twitter::Tweet
+  attrs:
+    :created_at: Wed Jul 01 23:45:16 +0000 2020
+    :id: 1278474784817455104
+    :id_str: '1278474784817455104'
+    :text: "Help @adfpizarro! I really need to know that! Hahaha \U0001F605"
+    :truncated: false
+    :entities:
+      :hashtags: []
+      :symbols: []
+      :user_mentions:
+      - :screen_name: adfpizarro
+        :name: Adrian
+        :id: 717291622434607104
+        :id_str: '717291622434607104'
+        :indices:
+        - 5
+        - 16
+      :urls: []
+    :source: <a href="http://twitter.com/download/android" rel="nofollow">Twitter
+      for Android</a>
+    :in_reply_to_status_id: 
+    :in_reply_to_status_id_str: 
+    :in_reply_to_user_id: 
+    :in_reply_to_user_id_str: 
+    :in_reply_to_screen_name: 
+    :user:
+      :id: 1227709156905377792
+      :id_str: '1227709156905377792'
+      :name: MariRoque
+      :screen_name: MariRoq88285995
+      :location: Rio de Janeiro, Brasil
+      :description: Software Developer Newbie⌨
+      :url: 
+      :entities:
+        :description:
+          :urls: []
+      :protected: false
+      :followers_count: 67
+      :friends_count: 39
+      :listed_count: 2
+      :created_at: Wed Feb 12 21:41:03 +0000 2020
+      :favourites_count: 152
+      :utc_offset: 
+      :time_zone: 
+      :geo_enabled: false
+      :verified: false
+      :statuses_count: 37
+      :lang: 
+      :contributors_enabled: false
+      :is_translator: false
+      :is_translation_enabled: false
+      :profile_background_color: F5F8FA
+      :profile_background_image_url: 
+      :profile_background_image_url_https: 
+      :profile_background_tile: false
+      :profile_image_url: http://pbs.twimg.com/profile_images/1275629784521936897/pA5hRrDv_normal.jpg
+      :profile_image_url_https: https://pbs.twimg.com/profile_images/1275629784521936897/pA5hRrDv_normal.jpg
+      :profile_banner_url: https://pbs.twimg.com/profile_banners/1227709156905377792/1587836180
+      :profile_link_color: 1DA1F2
+      :profile_sidebar_border_color: C0DEED
+      :profile_sidebar_fill_color: DDEEF6
+      :profile_text_color: '333333'
+      :profile_use_background_image: true
+      :has_extended_profile: true
+      :default_profile: true
+      :default_profile_image: false
+      :following: true
+      :follow_request_sent: false
+      :notifications: false
+      :translator_type: none
+    :geo: 
+    :coordinates: 
+    :place: 
+    :contributors: 
+    :is_quote_status: false
+    :retweet_count: 0
+    :favorite_count: 0
+    :favorited: false
+    :retweeted: false
+    :lang: en
+  _memoized_method_cache: !ruby/object:Memoizable::Memory
+    memory: !ruby/object:ThreadSafe::Cache
+      backend:
+        :created_at: 2020-07-01 23:45:16.000000000 Z
+      default_proc: 
+    monitor: !ruby/object:Monitor {}
+- !ruby/object:Twitter::Tweet
+  attrs:
+    :created_at: Wed Jul 01 23:44:39 +0000 2020
+    :id: 1278474630227996672
+    :id_str: '1278474630227996672'
+    :text: Hi @adfpizarro. How is your project going?
+    :truncated: false
+    :entities:
+      :hashtags: []
+      :symbols: []
+      :user_mentions:
+      - :screen_name: adfpizarro
+        :name: Adrian
+        :id: 717291622434607104
+        :id_str: '717291622434607104'
+        :indices:
+        - 3
+        - 14
+      :urls: []
+    :source: <a href="http://twitter.com/download/android" rel="nofollow">Twitter
+      for Android</a>
+    :in_reply_to_status_id: 
+    :in_reply_to_status_id_str: 
+    :in_reply_to_user_id: 
+    :in_reply_to_user_id_str: 
+    :in_reply_to_screen_name: 
+    :user:
+      :id: 1227709156905377792
+      :id_str: '1227709156905377792'
+      :name: MariRoque
+      :screen_name: MariRoq88285995
+      :location: Rio de Janeiro, Brasil
+      :description: Software Developer Newbie⌨
+      :url: 
+      :entities:
+        :description:
+          :urls: []
+      :protected: false
+      :followers_count: 67
+      :friends_count: 39
+      :listed_count: 2
+      :created_at: Wed Feb 12 21:41:03 +0000 2020
+      :favourites_count: 152
+      :utc_offset: 
+      :time_zone: 
+      :geo_enabled: false
+      :verified: false
+      :statuses_count: 37
+      :lang: 
+      :contributors_enabled: false
+      :is_translator: false
+      :is_translation_enabled: false
+      :profile_background_color: F5F8FA
+      :profile_background_image_url: 
+      :profile_background_image_url_https: 
+      :profile_background_tile: false
+      :profile_image_url: http://pbs.twimg.com/profile_images/1275629784521936897/pA5hRrDv_normal.jpg
+      :profile_image_url_https: https://pbs.twimg.com/profile_images/1275629784521936897/pA5hRrDv_normal.jpg
+      :profile_banner_url: https://pbs.twimg.com/profile_banners/1227709156905377792/1587836180
+      :profile_link_color: 1DA1F2
+      :profile_sidebar_border_color: C0DEED
+      :profile_sidebar_fill_color: DDEEF6
+      :profile_text_color: '333333'
+      :profile_use_background_image: true
+      :has_extended_profile: true
+      :default_profile: true
+      :default_profile_image: false
+      :following: true
+      :follow_request_sent: false
+      :notifications: false
+      :translator_type: none
+    :geo: 
+    :coordinates: 
+    :place: 
+    :contributors: 
+    :is_quote_status: false
+    :retweet_count: 0
+    :favorite_count: 0
+    :favorited: false
+    :retweeted: false
+    :lang: en
+  _memoized_method_cache: !ruby/object:Memoizable::Memory
+    memory: !ruby/object:ThreadSafe::Cache
+      backend:
+        :created_at: 2020-07-01 23:44:39.000000000 Z
+      default_proc: 
+    monitor: !ruby/object:Monitor {}
+- !ruby/object:Twitter::Tweet
+  attrs:
     :created_at: Wed Jul 01 01:14:45 +0000 2020
     :id: 1278134915788353537
     :id_str: '1278134915788353537'
@@ -38,10 +461,10 @@
           :urls: []
       :protected: false
       :followers_count: 109
-      :friends_count: 574
+      :friends_count: 573
       :listed_count: 0
       :created_at: Wed Jun 23 13:29:22 +0000 2010
-      :favourites_count: 2306
+      :favourites_count: 2308
       :utc_offset: 
       :time_zone: 
       :geo_enabled: false
@@ -66,7 +489,7 @@
       :has_extended_profile: true
       :default_profile: false
       :default_profile_image: false
-      :following: false
+      :following: true
       :follow_request_sent: false
       :notifications: false
       :translator_type: none
@@ -124,16 +547,16 @@
         :description:
           :urls: []
       :protected: false
-      :followers_count: 68
+      :followers_count: 67
       :friends_count: 39
       :listed_count: 2
       :created_at: Wed Feb 12 21:41:03 +0000 2020
-      :favourites_count: 151
+      :favourites_count: 152
       :utc_offset: 
       :time_zone: 
       :geo_enabled: false
       :verified: false
-      :statuses_count: 33
+      :statuses_count: 37
       :lang: 
       :contributors_enabled: false
       :is_translator: false
@@ -210,16 +633,16 @@
         :description:
           :urls: []
       :protected: false
-      :followers_count: 41
+      :followers_count: 40
       :friends_count: 59
       :listed_count: 0
       :created_at: Tue Feb 16 22:40:47 +0000 2010
-      :favourites_count: 8660
+      :favourites_count: 8688
       :utc_offset: 
       :time_zone: 
       :geo_enabled: false
       :verified: false
-      :statuses_count: 2611
+      :statuses_count: 2616
       :lang: 
       :contributors_enabled: false
       :is_translator: false
