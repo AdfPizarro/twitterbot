@@ -1,4 +1,4 @@
-require_relative '../lib/autopost.rb'
+require_relative './lib/autopost.rb'
 
 
 describe Autopost do
