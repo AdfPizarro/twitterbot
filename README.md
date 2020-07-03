@@ -92,9 +92,20 @@
 
 ​# Unit test (rspec)
 
+  In order to be able to run the unit test you will need to create the api.yml
+  file inside the spec folder with the api key following the syntax
+
+  `​---`​
+  `​- CONSUMER_KEY`​
+  `​- CONSUMER_SECRET`​
+  `​- ACCESS_TOKEN`​
+  `​- ACCESS_TOKEN_SECRET`​
+  
   If you want to modify any module be sure to run the unit tests with the command
 
   `​rspec --format documentation`​
+
+
 ​
 ## Authors
 ​
