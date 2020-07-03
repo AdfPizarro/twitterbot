@@ -75,9 +75,9 @@ class Autopost
            else
              './lib/journal.yml'
            end
-      # rubocop:disable Security/YAMLLoad:
+    # rubocop:disable Security/YAMLLoad:
     messages = YAML.load(File.read(path))
-      # rubocop:enable Security/YAMLLoad:
+    # rubocop:enable Security/YAMLLoad:
     messages.size
   end
 
