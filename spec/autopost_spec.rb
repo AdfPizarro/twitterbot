@@ -1,6 +1,5 @@
 require_relative '../lib/autopost.rb'
 
-
 describe Autopost do
   #  it '#Get journal remaining tweets' do
   #    autopost = Autopost.new('test')
