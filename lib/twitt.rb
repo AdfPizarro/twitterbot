@@ -1,4 +1,4 @@
-require 'twitter'
+require 'Twitter'
 require 'yaml'
 require 'dotenv'
 Dotenv.load('../.env')
