@@ -103,6 +103,10 @@
   `​- ACCESS_TOKEN`​
   `​- ACCESS_TOKEN_SECRET`​
 
+  And uncomment the tests in the autopost_spec.rb and twitt_spec.rb in the spec
+  folder (those tests are deactivated because need the api keys and can not run
+    in the github side)
+
   If you want to modify any module be sure to run the unit tests with the command
 
   `​rspec --format documentation`​
