@@ -1,8 +1,15 @@
 class TweetIntent
-  def initialize
-    @greetList=YAML.load(File.read("../lib/greet.yml"))
-    @helpList=YAML.load(File.read("../lib/help.yml"))
-    @memeList=YAML.load(File.read("../lib/memes.yml"))
+
+  def initialize(enviroment)
+    if enviroment=="test"
+      @greetList=YAML.load(File.read("./lib/greet.yml"))
+      @helpList=YAML.load(File.read("./lib/help.yml"))
+      @memeList=YAML.load(File.read("./lib/memes.yml"))
+    else
+      @greetList=YAML.load(File.read("../lib/greet.yml"))
+      @helpList=YAML.load(File.read("../lib/help.yml"))
+      @memeList=YAML.load(File.read("../lib/memes.yml"))
+    end
   end
 
   def checkIntent(message)

@@ -5,8 +5,8 @@ require 'yaml'
 
 class Autopost
   def initialize
-    @tweetIntent=TweetIntent.new
-    @twitt=Twitt.new
+    @tweetIntent=TweetIntent.new('production')
+    @twitt=Twitt.new("production")
   end
 
   def reply(tweet)

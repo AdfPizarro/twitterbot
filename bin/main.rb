@@ -3,7 +3,7 @@ require 'dotenv'
 Dotenv.load('../config.env')
 
 autopost = Autopost.new
-twitt = Twitt.new
+twitt = Twitt.new("production")
 trending_count = 0
 journal_count = 0
 

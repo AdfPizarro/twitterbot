@@ -5,13 +5,27 @@ Dotenv.load('../.env')
 
 class Twitt
 
-  def initialize
-    @client = Twitter::REST::Client.new do |config|
-      config.consumer_key        = ENV["CONSUMER_KEY"]
-      config.consumer_secret     = ENV["CONSUMER_SECRET"]
-      config.access_token        = ENV["ACCESS_TOKEN"]
-      config.access_token_secret = ENV["ACCESS_TOKEN_SECRET"]
+  def initialize(enviroment)
+
+    if enviroment=='production'
+      @client = Twitter::REST::Client.new do |config|
+        config.consumer_key        = ENV["CONSUMER_KEY"]
+        config.consumer_secret     = ENV["CONSUMER_SECRET"]
+        config.access_token        = ENV["ACCESS_TOKEN"]
+        config.access_token_secret = ENV["ACCESS_TOKEN_SECRET"]
+      end
+    else
+      api=  YAML.load(File.read("./spec/api.yml"))
+
+      @client = Twitter::REST::Client.new do |config|
+        config.consumer_key        = api[0]
+        config.consumer_secret     = api[1]
+        config.access_token        = api[2]
+        config.access_token_secret = api[3]
+      end
     end
+
+
   end
 
   def tweet(message)
