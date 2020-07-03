@@ -1,5 +1,5 @@
 require_relative '../lib/autopost.rb'
-require 'twitter'
+
 
 describe Autopost do
   #  it '#Get journal remaining tweets' do

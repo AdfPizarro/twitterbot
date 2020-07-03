@@ -1,5 +1,4 @@
 require_relative '../lib/twitt.rb'
-require 'twitter'
 
 describe Twitt do
   #  it '#Post a tweet' do
