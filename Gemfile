@@ -1,5 +1,5 @@
 gem 'dotenv'
+gem 'rspec'
+gem 'rubocop'
 gem 'twitter'
 gem 'yaml'
-gem 'rubocop'
-gem 'rspec'
