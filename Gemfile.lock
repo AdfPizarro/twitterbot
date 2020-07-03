@@ -9,7 +9,6 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
     ffi (1.13.1)
-    ffi (1.13.1-x64-mingw32)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
@@ -59,18 +58,10 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.7)
-    unf_ext (0.0.7.7-x64-mingw32)
-    yaml (0.1.0)
-
-PLATFORMS
-  x64-mingw32
-  x86_64-linux
-
-DEPENDENCIES
+    yaml (0.1.0)PLATFORMS
+  rubyDEPENDENCIES
   bundler
   rspec
   twitter
-  yaml
-
-BUNDLED WITH
-    1.17.2
+  yamlBUNDLED WITH
+   1.17.2
