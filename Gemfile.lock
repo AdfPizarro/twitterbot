@@ -1,13 +1,14 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    addressable (2.6.6)
+    addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     buftok (0.2.0)
     diff-lcs (1.4.4)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
+    ffi (1.13.1)
     ffi (1.13.1-x64-mingw32)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
@@ -57,10 +58,12 @@ GEM
       simple_oauth (~> 0.3.0)
     unf (0.1.4)
       unf_ext
+    unf_ext (0.0.7.7)
     unf_ext (0.0.7.7-x64-mingw32)
     yaml (0.1.0)
 
 PLATFORMS
+  x64-mingw32
   x86_64-linux
 
 DEPENDENCIES
@@ -70,4 +73,4 @@ DEPENDENCIES
   yaml
 
 BUNDLED WITH
-   1.17.2
+   2.1.4
