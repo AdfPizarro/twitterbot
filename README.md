@@ -85,7 +85,12 @@
 
 ## Commands
 
-  Note: You need to do `bundle install` before executing the commands above.
+  Please install the following gems
+
+  gem install "yaml"
+  gem install "Twitter"
+  gem install "rspec"
+  gem install "rubocop"
 
   To run the lints
   `​rubocop`​
