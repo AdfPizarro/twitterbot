@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem "rspec"
-gem "yaml"
-gem "twitter"
-gem "bundler"
+gem 'bundler'
+gem 'rspec'
+gem 'twitter'
+gem 'yaml'
