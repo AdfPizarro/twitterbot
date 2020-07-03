@@ -1,4 +1,3 @@
-require 'twitter'
 require 'yaml'
 require 'dotenv'
 Dotenv.load('../.env')
