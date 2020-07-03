@@ -1,4 +1,5 @@
 require_relative '../lib/tweet_intent.rb'
+require 'twitter'
 
 describe TweetIntent do
   it '#Check intent greet' do
