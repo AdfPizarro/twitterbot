@@ -1,17 +1,15 @@
 class TweetIntent
-  # rubocop:disable Security/YAMLLoad:
   def initialize(enviroment)
     if enviroment == 'test'
-      @greet_list = YAML.load(File.read('./lib/greet.yml'))
-      @help_list = YAML.load(File.read('./lib/help.yml'))
-      @meme_list = YAML.load(File.read('./lib/memes.yml'))
+      @greet_list = Psych.load(File.read('./lib/greet.yml'))
+      @help_list = Psych.load(File.read('./lib/help.yml'))
+      @meme_list = Psych.load(File.read('./lib/memes.yml'))
     else
-      @greet_list = YAML.load(File.read('../lib/greet.yml'))
-      @help_list = YAML.load(File.read('../lib/help.yml'))
-      @meme_list = YAML.load(File.read('../lib/memes.yml'))
+      @greet_list = Psych.load(File.read('../lib/greet.yml'))
+      @help_list = Psych.load(File.read('../lib/help.yml'))
+      @meme_list = Psych.load(File.read('../lib/memes.yml'))
     end
   end
-  # rubocop:enable Security/YAMLLoad:
 
   def check_intent(message)
     return 'empty' if message == '@adfpizarro'

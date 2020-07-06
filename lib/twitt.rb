@@ -13,9 +13,8 @@ class Twitt
         config.access_token_secret = ENV['ACCESS_TOKEN_SECRET']
       end
     else
-      # rubocop:disable Security/YAMLLoad:
-      api = YAML.load(File.read('./spec/api.yml'))
-      # rubocop:enable Security/YAMLLoad:
+      api = Psych.load(File.read('./spec/api.yml'))
+
       @client = Twitter::REST::Client.new do |config|
         config.consumer_key = api[0]
         config.consumer_secret = api[1]
@@ -33,10 +32,9 @@ class Twitt
     @client.mentions_timeline
   end
 
-  # rubocop:disable Security/YAMLLoad:
   def new_mentions
     if File.file?('../lib/tweets.yml')
-      saved_mentions = YAML.load(File.read('../lib/tweets.yml'))
+      saved_mentions = Psych.load(File.read('../lib/tweets.yml'))
       last_mention_date = saved_mentions[0].created_at
       all_mentions = @client.mentions_timeline
       new = all_mentions.select { |mention| mention.created_at > last_mention_date }
@@ -48,7 +46,6 @@ class Twitt
 
     new
   end
-  # rubocop:enable Security/YAMLLoad:
 
   def reply(message, tweet)
     id = tweet.id

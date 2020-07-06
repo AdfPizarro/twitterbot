@@ -26,6 +26,8 @@ class Autopost
     end
   end
 
+  private
+
   def reply_empty(tweet)
     message = "Hi @#{tweet.user.screen_name} i see that the message is empty, try by typing help"
     @twitt.reply(message, tweet)
@@ -50,15 +52,16 @@ class Autopost
     message
   end
 
+  public
+
   def post_from_journal
     path = if @enviroment == 'production'
              '../lib/journal.yml'
            else
              './lib/journal.yml'
            end
-    # rubocop:disable Security/YAMLLoad:
-    messages = YAML.load(File.read(path))
-    # rubocop:enable Security/YAMLLoad:
+    messages = Psych.load(File.read(path))
+
     unless messages.empty?
       message = messages[0]
       messages.shift
@@ -75,9 +78,8 @@ class Autopost
            else
              './lib/journal.yml'
            end
-    # rubocop:disable Security/YAMLLoad:
-    messages = YAML.load(File.read(path))
-    # rubocop:enable Security/YAMLLoad:
+    messages = Psych.load(File.read(path))
+
     messages.size
   end
 

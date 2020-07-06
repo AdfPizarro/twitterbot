@@ -8,6 +8,8 @@
 - Ruby 2.6.5
 ​- Twitter gem
 ​- Yml gem
+-dotenv gem
+
 
 
 ## Installation
@@ -25,13 +27,15 @@
 
   `https://developer.twitter.com/en/dashboard`
 
-  Once you have your api key, you will need to create a .env file with the
-  following promoted_content
+  Once you have your api key, you will need to create a .env file
+  in the root folder with the following content
 
+  ```
   export CONSUMER_KEY='YOUR_CONSUMER_KEY'
   export CONSUMER_SECRET='YOUR_CONSUMER_SECRET'
   export ACCESS_TOKEN='YOUR_ACCESS_TOKEN'
   export ACCESS_TOKEN_SECRET='YOUR_ACCESS_TOKEN_SECRET'
+  ```
 
   Now everything is ready, but don't run it yet, check the instructions
 ​
@@ -46,8 +50,11 @@
 
   You can modify this by changing the values in the config.env files, the time
   is in minutes
-  `export TRENDING_PUBLISH=120`
-  `export JOURNAL_PUBLISH=240`
+
+  ```
+  export TRENDING_PUBLISH=120
+  export JOURNAL_PUBLISH=240
+  ```
 
   You may also want to edit the predefined tweets in the journal by editing
   the `lib/journal.yml` file
@@ -82,6 +89,15 @@
 
   ![screenshot](./screenshots/ss1.png)
 
+  In order to be able to run the unit test you will need to create the api.yml
+  file inside the spec folder with the api key following the syntax
+  ```
+  ---
+  - CONSUMER_KEY
+  ​- CONSUMER_SECRET
+  - ACCESS_TOKEN
+  ​- ACCESS_TOKEN_SECRET
+  ```
 
 ## Commands
 
@@ -99,18 +115,6 @@
 
   ![screenshot](./screenshots/ss3.png)
 
-  In order to be able to run the unit test you will need to create the api.yml
-  file inside the spec folder with the api key following the syntax
-
-  `​---`​
-  `​- CONSUMER_KEY`​
-  `​- CONSUMER_SECRET`​
-  `​- ACCESS_TOKEN`​
-  `​- ACCESS_TOKEN_SECRET`​
-
-  And uncomment the tests in the autopost_spec.rb and twitt_spec.rb in the spec
-  folder (those tests are deactivated because need the api keys and can not run
-    in the github side)
 
   If you want to modify any module be sure to run the unit tests with the command
 
