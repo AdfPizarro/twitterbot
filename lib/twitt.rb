@@ -55,6 +55,5 @@ class Twitt
   def trendings
     trendings = @client.trends(2_459_115, {})
     trendings.each { |topic| return topic.name }
-    # File.write('../lib/trendings.yml', YAML.dump(trendings))
   end
 end
