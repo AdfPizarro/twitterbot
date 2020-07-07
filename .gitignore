@@ -1,4 +1,6 @@
 *.gem
+.env
+/lib/api.yml
 *.rbc
 /.config
 /coverage/
